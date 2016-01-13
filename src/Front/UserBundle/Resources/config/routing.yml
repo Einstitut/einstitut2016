@@ -1,0 +1,7 @@
+einstitut_admin_homepage:
+    path:     /
+    defaults: { _controller: FrontUserBundle:Default:index }
+
+einstitut_admin_adminpage:
+    path:     /admin/
+    defaults: { _controller: FrontUserBundle:Default:admin }
