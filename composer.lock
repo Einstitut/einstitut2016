@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bb72838ad1e59870c1bfd1540db6c63a",
+    "hash": "731772bcbb39dfc43dfe0fb0d66f7ef0",
     "content-hash": "94e33050559744b8b166aa8b975f22da",
     "packages": [
         {
@@ -1993,16 +1993,16 @@
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.9",
+            "version": "v2.3.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/swiftmailer-bundle.git",
-                "reference": "3d21ada19f23631f558ad6df653b168e35362e78"
+                "reference": "5e1a90f28213231ceee19c953bbebc5b5b95c690"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/3d21ada19f23631f558ad6df653b168e35362e78",
-                "reference": "3d21ada19f23631f558ad6df653b168e35362e78",
+                "url": "https://api.github.com/repos/symfony/swiftmailer-bundle/zipball/5e1a90f28213231ceee19c953bbebc5b5b95c690",
+                "reference": "5e1a90f28213231ceee19c953bbebc5b5b95c690",
                 "shasum": ""
             },
             "require": {
@@ -2046,20 +2046,20 @@
             ],
             "description": "Symfony SwiftmailerBundle",
             "homepage": "http://symfony.com",
-            "time": "2015-11-28 10:59:29"
+            "time": "2016-01-15 16:41:20"
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "8956ed50a44c5c4e02f2176c0773e24487477b09"
+                "reference": "f3e6a82bcbea4db3b56df08e491e20a1faae82b5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/8956ed50a44c5c4e02f2176c0773e24487477b09",
-                "reference": "8956ed50a44c5c4e02f2176c0773e24487477b09",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/f3e6a82bcbea4db3b56df08e491e20a1faae82b5",
+                "reference": "f3e6a82bcbea4db3b56df08e491e20a1faae82b5",
                 "shasum": ""
             },
             "require": {
@@ -2179,7 +2179,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2015-12-26 15:56:52"
+            "time": "2016-01-14 12:01:11"
         },
         {
             "name": "twig/twig",
@@ -2298,16 +2298,16 @@
         },
         {
             "name": "symfony/phpunit-bridge",
-            "version": "v2.8.1",
+            "version": "v2.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/phpunit-bridge.git",
-                "reference": "2deb2ccbe184948ae4e85e7b99e962738d3d2d69"
+                "reference": "855dc0e829fad123966347612b4183e307338c11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/2deb2ccbe184948ae4e85e7b99e962738d3d2d69",
-                "reference": "2deb2ccbe184948ae4e85e7b99e962738d3d2d69",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/855dc0e829fad123966347612b4183e307338c11",
+                "reference": "855dc0e829fad123966347612b4183e307338c11",
                 "shasum": ""
             },
             "require": {
@@ -2349,7 +2349,7 @@
             ],
             "description": "Symfony PHPUnit Bridge",
             "homepage": "https://symfony.com",
-            "time": "2015-12-11 08:57:52"
+            "time": "2016-01-06 09:59:23"
         }
     ],
     "aliases": [],

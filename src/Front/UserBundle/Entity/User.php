@@ -23,6 +23,20 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+    /**
+     * @ORM\OneToMany(targetEntity="Back\BackBundle\Entity\Evaluation",mappedBy="user")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $evaluation;
+    /**
+     * @ORM\ManyToOne(targetEntity="Back\BackBundle\Entity\Forum",inversedBy="user")
+     */
+    private $forum;
+    /**
+     * @ORM\OneToMany(targetEntity="Back\BackBundle\Entity\InscriptionTutoriel",mappedBy="user")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $inscriptionTuto;
 
     public function __construct()
     {
