@@ -1,6 +1,6 @@
 <?php
 
-namespace BackBundle\Controller;
+namespace Back\BackBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
