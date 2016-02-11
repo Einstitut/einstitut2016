@@ -7,18 +7,72 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
 
-<form action="{{ path("fos_user_security_check") }}" method="post">
-    <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
 
-    <label for="username">{{ 'security.login.username'|trans }}</label>
-    <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
 
-    <label for="password">{{ 'security.login.password'|trans }}</label>
-    <input type="password" id="password" name="_password" required="required" />
+<div class="login-container" display="center">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="top_site_main" style="color: #fff;background-color: rgba(45,51,57,0.95);background-image:url(../../../tpdm.foobla.netdna-cdn.com/elearningwp/wp-content/uploads/2015/06/banner.jpg);">
+                <span class="overlay-top-header" style="background-color:rgba(45,51,57,0.95)"></span>		<div class="page-title-wrapper">
+                    <div class="banner-wrapper container">
+                        <h1>Authentifier ou Inscrire</h1><div class="banner-description" style="color:#878787"><p> Authentifez vous si vous avez déjà un compte ou inscrivez-vous</p></div>			</div>
+                </div>
+            </div>
+        <div class="col-md-4"> </div>
+        <div class="col-md-4">
+            <div class="text-center m-b-md">
+                <h3>Veuillez vous identifier</h3>
 
-    <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
-    <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+            </div>
+            <div class="hpanel">
+                <div class="panel-body">
 
-    <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
-</form>
+
+                    <form action="{{ path("fos_user_security_check") }}" method="post">
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+                        </br>
+                        <div class="form-group">
+                            <label for="username">{{ 'security.login.username'|trans }}</label>
+
+                            <input class="form-control" type="text" id="username" name="_username" placeholder="username" value="{{ last_username }}" required="required" />
+                            <span class="help-block small">Your unique username to app</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">{{ 'security.login.password'|trans }}</label>
+
+                            <input class="form-control" type="password" id="password" name="_password" required="required" placeholder="*****" />
+                            <span class="help-block small">Yur strong password</span>
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
+                            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                        </div>
+                        <div class="container">
+                        <input class="btn btn-success" type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                        <button class="btn btn-border"><a href="{{ path('fos_user_registration_register') }}">s'inscrire</a></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="col-md-4"> </div>
+    </div>
+
+</div>
+
+
+<!-- Vendor scripts -->
+<script src="vendor/jquery/dist/jquery.min.js"></script>
+<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="vendor/metisMenu/dist/metisMenu.min.js"></script>
+<script src="vendor/iCheck/icheck.min.js"></script>
+<script src="vendor/sparkline/index.js"></script>
+
+<!-- App scripts -->
+<script src="scripts/homer.js"></script>
+
 {% endblock fos_user_content %}

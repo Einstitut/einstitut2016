@@ -5,3 +5,15 @@ einstitut_admin_homepage:
 einstitut_admin_adminpage:
     path:     /admin/
     defaults: { _controller: FrontUserBundle:Default:admin }
+
+einstitut_forum:
+    path:     /forum/
+    defaults: { _controller: FrontUserBundle:Default:forum }
+
+einstitut_cours:
+    path:     /cours/
+    defaults: { _controller: FrontUserBundle:Default:cours }
+
+einstitut_coursligne:
+    path:     /coursligne/
+    defaults: { _controller: FrontUserBundle:Default:coursligne }

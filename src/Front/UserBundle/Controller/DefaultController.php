@@ -14,4 +14,18 @@ class DefaultController extends Controller
     {
         return $this->render('FrontUserBundle:Default:admin.html.twig');
     }
+    public function forumAction()
+    {
+        return $this->render('FrontUserBundle:Default:forum.html.twig');
+    }
+
+    public function coursAction()
+    {
+        return $this->render('FrontUserBundle:Default:cours.html.twig');
+    }
+
+    public function coursligneAction()
+    {
+        return $this->render('FrontUserBundle:Default:coursligne.html.twig');
+    }
 }

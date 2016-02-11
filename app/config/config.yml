@@ -61,16 +61,19 @@ doctrine:
 
 # Swiftmailer Configuration
 swiftmailer:
-    transport: "%mailer_transport%"
-    host:      "%mailer_host%"
-    username:  "%mailer_user%"
-    password:  "%mailer_password%"
+    transport: smtp
+    host:      smtp-mail.outlook.com
+    username:  abdourahmanhoche@outlook.fr
+    password:  0915002172a
     spool:     { type: memory }
 
 fos_user:
     db_driver: orm # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
     user_class: Front\UserBundle\Entity\User
+    registration:
+        confirmation:
+            enabled: true
     
 doctrine_migrations:
     dir_name: "%kernel.root_dir%/DoctrineMigrations"
